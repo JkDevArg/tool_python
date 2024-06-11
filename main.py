@@ -1,4 +1,3 @@
-# Tool by Joaquin Centurión
 import os
 import pyautogui
 import schedule
@@ -46,8 +45,8 @@ def take_screenshot():
     # Obtener la lista de procesos en ejecución
     processes = get_running_processes()
 
-    # Guardar la información de los procesos y el nombre del equipo en un archivo de texto
-    with open('processes.txt', 'a') as f:
+    # Guardar la información de los procesos y el nombre del equipo en un archivo de texto, sobrescribiendo el contenido anterior
+    with open('processes.txt', 'w') as f:
         f.write(f"{timestamp}, Computer Name: {computer_name}\n")
         f.write("\n".join(processes))
         f.write("\n\n")
