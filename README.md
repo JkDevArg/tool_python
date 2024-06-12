@@ -2,9 +2,13 @@ Tool that takes screenshots and extracts information from your computer every 1 
 
 
 
-Commands to create the executable 
+Commands to install dependencies and compile tool
 
-```python
+```bash
+pip install -r requirements.txt
+```
+
+```bash
 pyinstaller --onefile --windowed --icon=icon.ico main.py
 ```
 
